@@ -11,6 +11,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
 
+
 def index(request):
     category_list = Category.objects.order_by('-likes')[:5]
 
